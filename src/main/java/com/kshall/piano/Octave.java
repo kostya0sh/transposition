@@ -60,7 +60,7 @@ public class Octave {
             throw new OctaveException("Semitone out of range");
         }
 
-        return startIndex + semitone - 1;
+        return startIndex + semitone - minSemitone;
     }
 
     public int indexToSemitone(int index) {
